@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Day6 {
-    // z podanego wyrazu szereguje litery z moejsc nieparzystych i parzystych
+    // z podanego wyrazu szereguje litery z miejsc nieparzystych i parzystych
     public static void main(String[] args) {
 
         Scanner scn = new Scanner(System.in);
