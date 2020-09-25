@@ -1,9 +1,21 @@
 package Day15_LinkedLists;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Explenations_Commands {
     public static void main(String[] args) {
+
+// wstawianie danych do listy za pomocą pętli for
+
+        LinkedList<Integer> ints1 = new LinkedList<>();
+        ArrayList<Integer> ints2 = new ArrayList<>();
+
+        for (int i = 0; i < 100; i++) {
+            ints1.add(i);
+            ints2.add(i);
+        }
+
 
 // Podobne do tabeli ale ma dynamiczną długośc a nie z góry określoną.
 
