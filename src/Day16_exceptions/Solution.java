@@ -14,6 +14,7 @@ public class Solution {
         }
         catch (NumberFormatException e) {
             System.out.println("Bad String");
+            System.err.println("Bad String");
         }
 
 
