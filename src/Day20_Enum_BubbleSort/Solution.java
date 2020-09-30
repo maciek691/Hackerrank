@@ -11,8 +11,9 @@ public class Solution {
         for (int a_i = 0; a_i < n; a_i++) {
             a[a_i] = in.nextInt();
         }
-
         int numberOfSwaps = 0;
+
+
         for (int i = 0; i < n; i++) {
             // Track number of elements swapped during a single array traversal
 
