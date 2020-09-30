@@ -2,6 +2,9 @@ package Day19_Interfaces;
 
 // Interface it is a collection of abstract methods, it's not a class -> no constructor, no implementations.
 // implement an interface <-> extend a class
+/* Interfejs może zawierać jedynie deklaracje metod, a klasa abstrakcyjna może zawierać również metody zdefiniowane.
+Wynika to bezpośrednio z tego, że interfejs skupia się na zapewnieniu określonej funkcjonalności, natomiast klasa
+abstrakcyjna może również opierać się na podobieństwie w implementacji klas pochodnych.*/
 
 import java.util.Random;
 
