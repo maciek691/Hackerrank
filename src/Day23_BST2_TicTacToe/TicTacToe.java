@@ -1,4 +1,4 @@
-package Day23;
+package Day23_BST2_TicTacToe;
 
 public class TicTacToe {
 

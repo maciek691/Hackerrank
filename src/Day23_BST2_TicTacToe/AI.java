@@ -1,4 +1,4 @@
-package Day23;
+package Day23_BST2_TicTacToe;
 
 import java.util.ArrayList;
 import java.util.Random;

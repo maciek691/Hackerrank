@@ -1,6 +1,5 @@
-package Day23;
+package Day23_BST2_TicTacToe;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class TicTacToeApp {
