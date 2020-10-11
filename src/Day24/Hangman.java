@@ -35,6 +35,7 @@ public class Hangman {
         currentGuess = initializeCurrentGuess();
     }
 
+    /* Read the dictionary file, and load into the dictionary */
     public void initializeStreams() throws IOException {
         try{
             // Open the dictionary.txt
@@ -43,6 +44,7 @@ public class Hangman {
             bufferedFileReader = new BufferedReader(fileReader);
             String currentLine = bufferedFileReader.readLine();
 
+            /* Loop thru the file, until the end of the file */
             while(currentLine != null) {
                 dictionary.add(currentLine);
                 currentLine = bufferedFileReader.readLine();
@@ -55,6 +57,7 @@ public class Hangman {
         }
     }
 
+    /* Return a random word from the dictionary */
     private String pickWord() {
         Random rand = new Random();
 
@@ -106,27 +109,38 @@ public class Hangman {
         return guess.equals(mysteryWord);
     }
 
+    /* Produce a current guess string with all the spaces removed */
     public String getCondensedCurrentGuess() {
         String guess = currentGuess.toString();
         return guess.replace(" ","");
     }
 
+    /* Has the character been guessed already */
     public boolean isGuessedAlready (char guess) {
         return previousGuesses.contains(guess);
     }
 
+    /* Play the guessed character */
     public boolean playGuess (char guess) {
         boolean isItAGoodGuess = false;
         previousGuesses.add(guess);
+
+        /* Loop thru the mysteryWord searching for matching letters */
         for (int i = 0; i< mysteryWord.length(); i++) {
+            /* See if the ith character of the mysteryWord matches the guess */
             if (mysteryWord.charAt(i) == guess) {
+                /* We have a match, update the currentGuess (the *2, is to skip over spaces) */
                 currentGuess.setCharAt(i * 2, guess);
                 isItAGoodGuess = true;
             }
         }
+
+        /* If it was not a good guess, increment the try counter */
         if (!isItAGoodGuess) {
             currentTry++;
         }
+
+        /* Return true if it was a good guess, false otherwise */
         return isItAGoodGuess;
     }
 
