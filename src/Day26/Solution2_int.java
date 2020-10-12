@@ -2,7 +2,8 @@ package Day26;
 
 import java.util.Scanner;
 
-
+// podajac liczby 6 6 2020 scanner sc.nextInt() będzie zaczytywał kolejno każdą liczbę oddzieloną spacja (podobnie sc.next()).
+// sc.nextLine() bedzie czytal całą linie.
 
 
 public class Solution2_int {
